@@ -1,11 +1,20 @@
 #title{
   color:#00ccff;
+  text-align: center;
 }
 
 nav{
   font-family: fantasy;
   position: fixed;
   top: 0;
+  width: 100%;
+}
+
+nav h2 {
+  font-family:'Shrikhand', cursive;
+  left: 0;
+  color: white;
+  float: left;
 }
 
 li{
@@ -15,11 +24,14 @@ li{
 	color: #ffffff;
 	padding: 5px;
 	border-radius: 5px 5px;
-	background-color:#00BFFF
+	background-color:#00BFFF;
+  float: right;
 }
 
 body{
-  background-image: url(http://s2.thingpic.com/images/EC/KdQvt4vNuWehY4g6NcNT5gjY.jpeg);
+  margin: 0;
+  background-color: #ddd;
+  background: url(http://s2.thingpic.com/images/EC/KdQvt4vNuWehY4g6NcNT5gjY.jpeg) no-repeat center fixed;;
   background-size: cover;
 }
 
@@ -28,6 +40,23 @@ h1{
   font-family: 'Playfair Display', serif;
 }
 
+.projects h1{
+  margin: 0;
+  font-family:"Open Sans";
+  text-align: center;
+  font-weight: bold;
+  padding: 25px;
+  color: white;
+}
+
+.projects h3{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
 .column {
   float: left;
   width: 33.3%;
@@ -35,8 +64,71 @@ h1{
 
 .column-inner{
   padding: 20px;
+  text-align: center;
+}
+
+.column-inner h3 {
+  background-color: #ddd;
+  display: inline;
 }
 
 .img{
-  width: 100%;
+  height: 300px;
+  width: 330px;
+}
+
+.resume h1{
+  margin: 0;
+  font-family:"Open Sans";
+  text-align: center;
+  font-weight: bold;
+  padding: 25px;
+  color: white;
+}
+
+.h3-resume{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    margin-bottom: 5px;
+    font-size: 18px;
+    /*position: absolute;*/
+    top: 0;
+  }
+
+.resume-row {
+  position: relative;
+}
+.img1 {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+}
+
+.img2 {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  margin-top: 20px;
+}
+
+.resume-row .column {
+  width: 50%
+}
+
+
+
+
+
+
+.row:before {
+  display: table;
+  content: "";
+}
+
+.row:after {
+  display: table;
+  content: "";
+  clear: both;
 }
